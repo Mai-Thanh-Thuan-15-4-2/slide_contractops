@@ -2256,7 +2256,17 @@ p {
 .architecture-summary article::before { top: 20px; }
 .architecture-summary h3 { font-size: 24px; margin-bottom: 7px; }
 .architecture-summary article.architecture-ai { margin-left: -84px; --architecture-color: #68532d; --architecture-shade: #433c2e; border-color: #e9c56a66; }
-.architecture-summary .architecture-ai::before { content: none; }
-.architecture-ai-star { position: absolute; left: 16px; top: 19px; width: 21px; height: 21px; color: #ffdb7d; }
+.architecture-summary .architecture-ai::before { background: #ffdb7d; }
+.architecture-ai-star { position: absolute; right: 20px; top: 20px; width: 23px; height: 23px; color: #ffdb7d; }
 .architecture-summary .architecture-ai h3 { color: #ffe5a6; }
 .architecture-slide.active .architecture-summary article:nth-child(4) { animation-delay: .56s; }
+
+.architecture-summary article.architecture-ai { padding-right: 58px; }
+.architecture-slide.active .architecture-ai-star { animation: architectureStarFloat 2.6s ease-in-out infinite; }
+@keyframes architectureStarFloat {
+  0%, 100% { transform: translateY(3px); }
+  50% { transform: translateY(-3px); }
+}
+@media (prefers-reduced-motion: reduce), print {
+  .architecture-slide.active .architecture-ai-star { animation: none; transform: none; }
+}
