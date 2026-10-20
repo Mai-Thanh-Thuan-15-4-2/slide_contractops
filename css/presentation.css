@@ -2118,53 +2118,29 @@ p {
   .case-slide.active .case-head, .case-slide.active .case-art-row, .case-slide.active .case-phase-row, .case-slide.active .case-outcomes, .case-slide.active .case-progress { animation: none; opacity: 1; transform: none; }
 }
 
-/* Architecture and digitization value: open layouts. */
-.architecture-slide .slide-head h2, .digitization-benefits .slide-head h2 { font-size: 48px; }
-.architecture-layout { display: grid; grid-template-columns: .85fr 1.35fr 1fr; gap: 32px; margin-top: 32px; }
-.architecture-layout h3 { font-size: 22px; margin: 0 0 22px; color: #e6f3fa; }
-.deploy-option { display: flex; gap: 17px; align-items: center; }
-.deploy-option svg { width: 62px; height: 48px; fill: none; stroke: #78d9e9; stroke-width: 2; flex-shrink: 0; }
-.deploy-option h4 { font-size: 25px; margin: 0 0 6px; color: #e9f6fc; }
-.deploy-option p { font-size: 17px; line-height: 1.45; color: #b6d0df; margin: 0; }
-.deploy-or { color: #7c9dae; font-size: 11px; letter-spacing: .16em; margin: 22px 0 22px 80px; }
-.architecture-security { border-left: 1px solid #8cb4c43b; border-right: 1px solid #8cb4c43b; padding: 0 28px; }
-.architecture-core { font-size: 23px; color: #78d9e9; font-weight: 700; margin: 0 0 18px; }
-.architecture-core span { display: block; font-size: 11px; color: #a5c3d2; letter-spacing: .1em; margin-top: 8px; font-weight: 400; }
-.architecture-security dl { margin: 0; display: grid; gap: 16px; }
-.architecture-security dl div { display: grid; grid-template-columns: 100px 1fr; gap: 12px; }
-.architecture-security dt { color: #edf7fc; font-size: 18px; font-weight: 600; }
-.architecture-security dd { margin: 0; font-size: 17px; line-height: 1.4; color: #b8cfdd; }
-.architecture-integrations ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 15px; }
-.architecture-integrations li { display: grid; grid-template-columns: 96px 1fr; gap: 12px; align-items: baseline; }
-.architecture-integrations strong { font-size: 19px; color: #eaf7fc; font-weight: 600; }
-.architecture-integrations li span { font-size: 16px; color: #b8cfdd; }
-.integration-note { font-size: 14px; line-height: 1.45; color: #89afc2; margin: 20px 0 0; }
-.architecture-legal { border-top: 1px solid #8cb4c43b; margin-top: 30px; padding-top: 20px; display: grid; grid-template-columns: 225px 1fr; gap: 24px; }
-.architecture-legal h3 { font-size: 21px; line-height: 1.3; margin: 0; color: #78d9e9; }
-.architecture-legal p { font-size: 15px; line-height: 1.5; color: #b8cfdd; margin: 0 0 7px; }
-.architecture-legal strong { color: #e2f0f6; font-weight: 600; }
-.architecture-legal span { font-size: 13px; color: #88abba; }
-.benefit-table { margin-top: 28px; }
-.benefit-table-head, .benefit-row { display: grid; grid-template-columns: 1.2fr 1fr 1.05fr; gap: 34px; align-items: center; }
-.benefit-table-head { color: #85b5c8; font-size: 11px; letter-spacing: .12em; padding-bottom: 12px; }
-.benefit-row { border-top: 1px solid #8cb4c42e; min-height: 95px; }
-.benefit-problem { display: flex; align-items: center; gap: 15px; }
-.benefit-problem img { width: 72px; height: 76px; object-fit: contain; flex-shrink: 0; }
-.benefit-problem h3 { color: #e6f1f8; font-size: 22px; line-height: 1.25; margin: 0; font-weight: 600; }
-.benefit-row > p { font-size: 18px; line-height: 1.45; margin: 0; color: #b1cbd9; }
-.benefit-result strong { color: #78d9ce; display: block; font-size: 22px; line-height: 1.25; font-weight: 600; }
-.benefit-result span { display: block; color: #a6c6d5; font-size: 17px; margin-top: 6px; }
-.benefit-measure { border-top: 1px solid #8cb4c42e; padding-top: 18px; color: #bbd2df; font-size: 17px; margin: 0; }
-.benefit-measure span { color: #78d9e9; font-size: 11px; letter-spacing: .1em; margin-right: 20px; }
+
+/* Friendly architecture and document digitization benefits. */
+.architecture-slide .slide-head h2, .digitization-benefits .slide-head h2 { font-size: 50px; }
+.friendly-architecture { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; margin-top: 20px; }
+.architecture-hero { display: block; width: 100%; height: 360px; object-fit: contain; }
+.architecture-summary { display: grid; gap: 30px; }
+.architecture-summary article, .benefits-summary article { position: relative; padding-left: 24px; }
+.architecture-summary article::before, .benefits-summary article::before { content: ""; position: absolute; left: 0; top: 7px; width: 3px; height: 24px; background: #78d9e9; }
+.architecture-summary h3, .benefits-summary h3 { font-size: 28px; font-weight: 600; color: #eaf5fb; margin: 0 0 9px; line-height: 1.2; }
+.architecture-summary p, .benefits-summary p { font-size: 20px; line-height: 1.45; color: #b4cedd; margin: 0; }
+.architecture-compliance { display: flex; align-items: baseline; gap: 24px; border-top: 1px solid #a4c9d533; padding-top: 19px; margin-top: 15px; }
+.architecture-compliance span { font-size: 11px; letter-spacing: .12em; color: #78d9e9; flex-shrink: 0; }
+.architecture-compliance p { font-size: 17px; color: #b4cedd; margin: 0; }
+.friendly-benefits { display: grid; grid-template-columns: 1fr 1.18fr; gap: 42px; align-items: center; margin-top: 32px; }
+.benefits-summary { display: grid; gap: 27px; }
+.benefits-hero { display: block; width: 100%; height: 430px; object-fit: contain; }
 .architecture-slide.active .slide-head, .digitization-benefits.active .slide-head { animation: goalReveal .6s ease-out both; }
-.architecture-slide.active .architecture-deploy { animation: goalReveal .7s ease-out .1s both; }
-.architecture-slide.active .architecture-security { animation: goalReveal .7s ease-out .25s both; }
-.architecture-slide.active .architecture-integrations { animation: goalReveal .7s ease-out .4s both; }
-.architecture-slide.active .architecture-legal { animation: goalReveal .7s ease-out .55s both; }
-.digitization-benefits.active .benefit-row { animation: goalReveal .65s ease-out .15s both; }
-.digitization-benefits.active .benefit-row:nth-child(3) { animation-delay: .3s; }
-.digitization-benefits.active .benefit-row:nth-child(4) { animation-delay: .45s; }
-.digitization-benefits.active .benefit-row:nth-child(5) { animation-delay: .6s; }
+.architecture-slide.active .architecture-hero, .digitization-benefits.active .benefits-hero { animation: goalArtReveal .9s ease-out .15s both; }
+.architecture-slide.active .architecture-summary article, .digitization-benefits.active .benefits-summary article { animation: goalReveal .65s ease-out .2s both; }
+.architecture-slide.active .architecture-summary article:nth-child(2), .digitization-benefits.active .benefits-summary article:nth-child(2) { animation-delay: .32s; }
+.architecture-slide.active .architecture-summary article:nth-child(3), .digitization-benefits.active .benefits-summary article:nth-child(3) { animation-delay: .44s; }
+.digitization-benefits.active .benefits-summary article:nth-child(4) { animation-delay: .56s; }
+.architecture-slide.active .architecture-compliance { animation: goalReveal .65s ease-out .6s both; }
 @media (prefers-reduced-motion: reduce), print {
-  .architecture-slide.active .slide-head, .architecture-slide.active .architecture-deploy, .architecture-slide.active .architecture-security, .architecture-slide.active .architecture-integrations, .architecture-slide.active .architecture-legal, .digitization-benefits.active .slide-head, .digitization-benefits.active .benefit-row { animation: none; opacity: 1; transform: none; }
+  .architecture-slide.active .slide-head, .digitization-benefits.active .slide-head, .architecture-slide.active .architecture-hero, .digitization-benefits.active .benefits-hero, .architecture-slide.active .architecture-summary article, .digitization-benefits.active .benefits-summary article, .architecture-slide.active .architecture-compliance { animation: none; opacity: 1; transform: none; }
 }
