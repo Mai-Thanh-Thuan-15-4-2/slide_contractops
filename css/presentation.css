@@ -2270,3 +2270,22 @@ p {
 @media (prefers-reduced-motion: reduce), print {
   .architecture-slide.active .architecture-ai-star { animation: none; transform: none; }
 }
+
+/* Four illustrated weeks of the pilot rollout. */
+#deck .slide-12-timeline-01 { margin-top: 26px; }
+#deck .slide-12-soft-note-01 { margin-top: 24px; }
+.slide-12-timeline-01 .time-dot { margin-bottom: 14px; }
+.slide-12-timeline-01 .timebox { padding: 14px 16px 18px; min-height: 338px; }
+.pilot-step-art { display: block; width: 100%; height: 158px; object-fit: contain; margin-bottom: 12px; }
+.slide-12-timeline-01 .number { margin-bottom: 8px; }
+.slide-12-timeline-01 .timebox strong { display: block; font-size: 22px; line-height: 1.2; }
+.slide-12-timeline-01 .timebox p { font-size: 17px; line-height: 1.4; margin-top: 10px; }
+.slide-12-timeline-01 .timecol:nth-child(1) { --pilot-delay: .15s; }
+.slide-12-timeline-01 .timecol:nth-child(2) { --pilot-delay: .28s; }
+.slide-12-timeline-01 .timecol:nth-child(3) { --pilot-delay: .41s; }
+.slide-12-timeline-01 .timecol:nth-child(4) { --pilot-delay: .54s; }
+.active .slide-12-timeline-01 .timebox { animation: goalReveal .65s ease-out var(--pilot-delay) both; }
+.active .slide-12-timeline-01 .pilot-step-art { animation: goalArtReveal .8s ease-out calc(var(--pilot-delay) + .1s) both; }
+@media (prefers-reduced-motion: reduce), print {
+  .active .slide-12-timeline-01 .timebox, .active .slide-12-timeline-01 .pilot-step-art { animation: none; opacity: 1; transform: none; }
+}
