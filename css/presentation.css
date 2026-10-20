@@ -2144,3 +2144,19 @@ p {
 @media (prefers-reduced-motion: reduce), print {
   .architecture-slide.active .slide-head, .digitization-benefits.active .slide-head, .architecture-slide.active .architecture-hero, .digitization-benefits.active .benefits-hero, .architecture-slide.active .architecture-summary article, .digitization-benefits.active .benefits-summary article, .architecture-slide.active .architecture-compliance { animation: none; opacity: 1; transform: none; }
 }
+
+/* Practical digitization operating habits. */
+.operating-tips .slide-head h2 { font-size: 46px; }
+.operating-tips-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); column-gap: 32px; row-gap: 26px; margin-top: 30px; }
+.operating-tips-grid article { border-top: 1px solid #96c4d432; padding-top: 12px; }
+.operating-tips-grid img { display: block; width: 57px; height: 57px; object-fit: contain; margin-bottom: 9px; }
+.operating-tips-grid h3 { color: #e8f4fb; font-size: 24px; font-weight: 600; line-height: 1.22; margin: 0 0 8px; }
+.operating-tips-grid p { color: #b3cddb; font-size: 18px; line-height: 1.45; margin: 0; }
+.operating-tips-note { margin: 26px 0 0; padding-top: 18px; border-top: 1px solid #96c4d432; color: #afcbd9; font-size: 16px; line-height: 1.5; }
+.operating-tips-note strong { color: #78d9e9; font-weight: 600; margin-right: 20px; }
+.operating-tips.active .slide-head { animation: goalReveal .6s ease-out both; }
+.operating-tips.active .operating-tips-grid article { animation: goalReveal .65s ease-out var(--tip-delay) both; }
+.operating-tips.active .operating-tips-note { animation: goalReveal .65s ease-out .7s both; }
+@media (prefers-reduced-motion: reduce), print {
+  .operating-tips.active .slide-head, .operating-tips.active .operating-tips-grid article, .operating-tips.active .operating-tips-note { animation: none; opacity: 1; transform: none; }
+}
