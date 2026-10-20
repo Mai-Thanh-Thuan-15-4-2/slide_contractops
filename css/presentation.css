@@ -1754,12 +1754,12 @@ p {
 /* Slide 4: a friendly illustrated record journey with history alongside. */
 .record-walkthrough .slide-head { margin-bottom: 12px; }
 .record-walkthrough .slide-head h2 { font-size: 44px; }
-.record-journey { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, .85fr); align-items: center; gap: 36px; }
+.record-journey { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: center; gap: 36px; }
 .record-journey-art { min-width: 0; margin: 0; }
 .record-journey-art img { display: block; width: 100%; height: 320px; object-fit: contain; }
 .record-history { border-left: 1px solid #315065; padding: 8px 0 8px 28px; }
 .record-history-overline { color: #79d6e8; font-size: 12px; font-weight: 700; letter-spacing: .15em; margin-bottom: 12px; }
-.record-history h3 { color: #f1f8fc; font-size: 28px; line-height: 1.24; max-width: 300px; }
+.record-history h3 { color: #f1f8fc; font-size: 28px; line-height: 1.24; white-space: nowrap; }
 .record-history ul { display: flex; flex-direction: column; gap: 14px; margin: 22px 0 0; padding: 0; list-style: none; }
 .record-history li { position: relative; padding-left: 20px; color: #b7d1df; font-size: 19px; line-height: 1.35; }
 .record-history li::before { content: ""; position: absolute; left: 0; top: .55em; width: 6px; height: 6px; border-radius: 50%; background: #70d9e9; }
