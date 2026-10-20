@@ -2190,17 +2190,17 @@ p {
 
 /* Balance benefit groups around a central illustration. */
 .benefits-with-vtcode { grid-template-columns: 1fr 1.12fr 1fr; gap: 24px; align-items: center; }
-.benefits-with-vtcode .benefits-column { align-self: start; }
+.benefits-with-vtcode .benefits-column { align-self: start; position: relative; z-index: 1; }
 .benefits-with-vtcode .benefits-column-title { font-size: 22px; }
 .benefits-with-vtcode .benefits-summary article { width: calc(100% - 24px); min-height: 86px; padding: 13px 30px 13px 58px; text-align: left; }
-.benefits-with-vtcode .benefits-summary article:nth-child(2) { margin-left: 8px; }
-.benefits-with-vtcode .benefits-summary article:nth-child(3) { margin-left: 16px; }
-.benefits-with-vtcode .benefits-summary article:nth-child(4) { margin-left: 24px; }
+.benefits-with-vtcode .benefits-summary article:nth-child(2) { margin-left: 36px; }
+.benefits-with-vtcode .benefits-summary article:nth-child(3) { margin-left: 72px; }
+.benefits-with-vtcode .benefits-summary article:nth-child(4) { margin-left: 108px; }
 .benefits-with-vtcode .benefits-summary article::before { left: 34px; top: 18px; width: 8px; height: 14px; }
 .benefits-with-vtcode .benefits-summary h3 { font-size: 22px; }
 .benefits-with-vtcode .benefits-summary p { font-size: 16px; line-height: 1.35; }
 .benefits-with-vtcode > .benefits-hero { width: 100%; height: 410px; margin: 0; object-fit: contain; }
-.benefits-with-vtcode .vtcode-approach { border: 0; padding: 0; align-self: start; }
+.benefits-with-vtcode .vtcode-approach { border: 0; padding: 0; align-self: start; position: relative; z-index: 1; }
 .benefits-with-vtcode .vtcode-approach-list { gap: 23px; padding-top: 12px; }
 .benefits-with-vtcode .vtcode-approach-list article { padding: 0 0 20px; border-bottom: 1px solid #8cb4c42e; }
 .benefits-with-vtcode .vtcode-approach-list h3 { font-size: 23px; line-height: 1.2; }
@@ -2211,9 +2211,9 @@ p {
 .benefits-with-vtcode .vtcode-approach-list { gap: 12px; padding-top: 0; }
 .benefits-with-vtcode .vtcode-approach-list article { position: relative; width: calc(100% - 24px); min-height: 86px; padding: 13px 30px 13px 58px; border: 0; text-align: left; background: linear-gradient(270deg,#23515f99,#2b687466); clip-path: polygon(25px 0,100% 0,calc(100% - 18px) 50%,100% 100%,25px 100%,0 50%); }
 .benefits-with-vtcode .vtcode-approach-list article:nth-child(1) { margin-left: 24px; }
-.benefits-with-vtcode .vtcode-approach-list article:nth-child(2) { margin-left: 16px; }
-.benefits-with-vtcode .vtcode-approach-list article:nth-child(3) { margin-left: 8px; }
-.benefits-with-vtcode .vtcode-approach-list article:nth-child(4) { margin-left: 0; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(2) { margin-left: -12px; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(3) { margin-left: -48px; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(4) { margin-left: -84px; }
 .benefits-with-vtcode .vtcode-approach-list article::before { content: ""; position: absolute; left: 34px; right: auto; top: 18px; width: 8px; height: 14px; border: solid #63d592; border-width: 0 3px 3px 0; transform: rotate(45deg); }
 .benefits-with-vtcode .vtcode-approach-list h3 { font-size: 22px; line-height: 1.2; margin: 0 0 6px; color: #eaf5fb; }
 .benefits-with-vtcode .vtcode-approach-list p { font-size: 16px; line-height: 1.35; }
