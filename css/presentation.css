@@ -2044,9 +2044,9 @@ p {
 .closing-contact { grid-column: 1 / -1; border-top: 1px solid #70d9e940; padding-top: 22px; }
 .closing-contact h3 { font-size: 19px; color: #78d9e9; margin: 0 0 22px; font-weight: 600; }
 .closing-contact-grid { display: grid; grid-template-columns: .8fr 1fr 1.9fr; gap: 30px; }
-.closing-contact-item { display: flex; align-items: flex-start; gap: 14px; }
-.closing-contact-item svg { width: 23px; height: 23px; flex: 0 0 23px; fill: none; stroke: #78d9e9; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; margin-top: 2px; }
-.closing-contact-item h4 { font-size: 17px; color: #eef7fc; margin: 0 0 8px; font-weight: 600; }
+.closing-contact-item { display: grid; grid-template-columns: 40px minmax(0, 1fr); align-items: start; gap: 14px; }
+.closing-contact-item svg { display: block; width: 40px; height: 40px; padding: 9px; fill: none; stroke: #78d9e9; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; margin: 4px 0 0; background: #78d9e914; border: 1px solid #78d9e930; border-radius: 10px; }
+.closing-contact-item h4 { font-size: 17px; line-height: 22px; color: #eef7fc; margin: 0 0 6px; font-weight: 600; }
 .closing-contact-item p, .closing-contact-item a { font-size: 18px; line-height: 1.5; color: #b7d0df; margin: 0; text-decoration: none; }
 .closing-contact-item a:hover { color: #78d9e9; text-decoration: underline; }
 .closing-slide.active .closing-contact { animation: goalReveal .7s ease-out .45s both; }
