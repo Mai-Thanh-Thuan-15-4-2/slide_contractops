@@ -2205,3 +2205,15 @@ p {
 .benefits-with-vtcode .vtcode-approach-list article { padding: 0 0 20px; border-bottom: 1px solid #8cb4c42e; }
 .benefits-with-vtcode .vtcode-approach-list h3 { font-size: 23px; line-height: 1.2; }
 .benefits-with-vtcode .vtcode-approach-list p { font-size: 18px; line-height: 1.45; }
+
+/* Mirror VTCODE arrows toward the central illustration. */
+.benefits-with-vtcode .vtcode-approach > .benefits-column-title { text-align: right; }
+.benefits-with-vtcode .vtcode-approach-list { gap: 12px; padding-top: 0; }
+.benefits-with-vtcode .vtcode-approach-list article { position: relative; width: calc(100% - 24px); min-height: 86px; padding: 13px 42px 13px 24px; border: 0; text-align: right; background: linear-gradient(270deg,#23515f99,#2b687466); clip-path: polygon(25px 0,100% 0,calc(100% - 18px) 50%,100% 100%,25px 100%,0 50%); }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(1) { margin-left: 24px; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(2) { margin-left: 16px; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(3) { margin-left: 8px; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(4) { margin-left: 0; }
+.benefits-with-vtcode .vtcode-approach-list article::before { content: ""; position: absolute; right: 23px; top: 18px; width: 8px; height: 14px; border: solid #63d592; border-width: 0 3px 3px 0; transform: rotate(45deg); }
+.benefits-with-vtcode .vtcode-approach-list h3 { font-size: 22px; line-height: 1.2; margin: 0 0 6px; color: #eaf5fb; }
+.benefits-with-vtcode .vtcode-approach-list p { font-size: 16px; line-height: 1.35; }
