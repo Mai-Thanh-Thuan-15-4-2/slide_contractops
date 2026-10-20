@@ -2125,14 +2125,21 @@ p {
 .architecture-hero { display: block; width: 100%; height: 360px; object-fit: contain; }
 .architecture-summary { display: grid; gap: 30px; }
 .architecture-summary article, .benefits-summary article { position: relative; padding-left: 24px; }
-.architecture-summary article::before, .benefits-summary article::before { content: ""; position: absolute; left: 0; top: 7px; width: 3px; height: 24px; background: #78d9e9; }
+.architecture-summary article::before { content: ""; position: absolute; left: 0; top: 7px; width: 3px; height: 24px; background: #78d9e9; }
 .architecture-summary h3, .benefits-summary h3 { font-size: 28px; font-weight: 600; color: #eaf5fb; margin: 0 0 9px; line-height: 1.2; }
 .architecture-summary p, .benefits-summary p { font-size: 20px; line-height: 1.45; color: #b4cedd; margin: 0; }
 .architecture-compliance { display: flex; align-items: baseline; gap: 24px; border-top: 1px solid #a4c9d533; padding-top: 19px; margin-top: 15px; }
 .architecture-compliance span { font-size: 11px; letter-spacing: .12em; color: #78d9e9; flex-shrink: 0; }
 .architecture-compliance p { font-size: 17px; color: #b4cedd; margin: 0; }
 .friendly-benefits { display: grid; grid-template-columns: 1fr 1.18fr; gap: 42px; align-items: center; margin-top: 32px; }
-.benefits-summary { display: grid; gap: 27px; }
+.benefits-summary { display: grid; gap: 12px; }
+.benefits-summary article { padding: 17px 20px 17px 50px; background: linear-gradient(90deg, #23515f80, #23515f35); }
+.benefits-summary article:nth-child(2) { margin-left: 22px; }
+.benefits-summary article:nth-child(3) { margin-left: 44px; }
+.benefits-summary article:nth-child(4) { margin-left: 66px; }
+.benefits-summary article::before { content: ""; position: absolute; left: 21px; top: 20px; width: 10px; height: 18px; border: solid #63d592; border-width: 0 3px 3px 0; transform: rotate(45deg); }
+.benefits-summary h3 { font-size: 26px; margin-bottom: 6px; }
+.benefits-summary p { font-size: 18px; }
 .benefits-hero { display: block; width: 100%; height: 430px; object-fit: contain; }
 .architecture-slide.active .slide-head, .digitization-benefits.active .slide-head { animation: goalReveal .6s ease-out both; }
 .architecture-slide.active .architecture-hero, .digitization-benefits.active .benefits-hero { animation: goalArtReveal .9s ease-out .15s both; }
