@@ -90,6 +90,49 @@
       },
     };
   }
+  function createCaseProgress() {
+    const slide = document.querySelector(".case-slide");
+    if (!slide) return { setVisible() {} };
+    const low = slide.querySelector(".case-count-low");
+    const high = slide.querySelector(".case-count-high");
+    const before = slide.querySelector(".case-count-before");
+    const bar = slide.querySelector(".case-range");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let visible = false;
+    let frame = 0;
+    function render(fraction) {
+      low.textContent = String(Math.round(60 * fraction));
+      high.textContent = String(Math.round(80 * fraction));
+      before.textContent = String(Math.round(90 * fraction));
+      const fill = 80 * fraction;
+      bar.style.setProperty("--case-solid", `${Math.min(60, fill)}%`);
+      bar.style.setProperty("--case-estimate", `${Math.max(0, fill - 60)}%`);
+    }
+    function finish() {
+      cancelAnimationFrame(frame);
+      render(1);
+    }
+    reducedMotion.addEventListener("change", () => {
+      if (reducedMotion.matches) finish();
+    });
+    return {
+      setVisible(next) {
+        if (visible === next) return;
+        visible = next;
+        cancelAnimationFrame(frame);
+        if (!visible || reducedMotion.matches) { render(1); return; }
+        render(0);
+        const start = performance.now() + 400;
+        function tick(now) {
+          const elapsed = Math.max(0, Math.min(1, (now - start) / 1800));
+          render(1 - Math.pow(1 - elapsed, 3));
+          if (elapsed < 1 && visible) frame = requestAnimationFrame(tick);
+        }
+        frame = requestAnimationFrame(tick);
+      },
+    };
+  }
+  const caseProgress = createCaseProgress();
   const accountingDemo = createAccountingDemo();
   function fit() {
     const s = Math.min(innerWidth / 1440, innerHeight / 810);
@@ -99,6 +142,7 @@
     current = Math.max(0, Math.min(total - 1, n));
     slides.forEach((sl, i) => sl.classList.toggle("active", i === current));
     const sl = slides[current];
+    caseProgress.setVisible(sl.matches(".case-slide") && !overview.classList.contains("visible"));
     accountingDemo.setVisible(sl.matches(".accounting-project") && !overview.classList.contains("visible"));
     deck.classList.add("is-dark");
     deck.dataset.motif = String((current % 3) + 1);
@@ -125,6 +169,7 @@
     );
     updateEdgeNavigation();
     accountingDemo.setVisible(slides[current].matches(".accounting-project") && !overview.classList.contains("visible"));
+    caseProgress.setVisible(slides[current].matches(".case-slide") && !overview.classList.contains("visible"));
   }
   function fullscreen() {
     if (!document.fullscreenElement)
