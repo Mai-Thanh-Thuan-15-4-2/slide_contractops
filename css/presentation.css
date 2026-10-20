@@ -2289,3 +2289,17 @@ p {
 @media (prefers-reduced-motion: reduce), print {
   .active .slide-12-timeline-01 .timebox, .active .slide-12-timeline-01 .pilot-step-art { animation: none; opacity: 1; transform: none; }
 }
+
+/* Draw the pilot connection from week one to week four on entry. */
+.slide-12-timeline-01::before { left: 12.5%; right: 12.5%; }
+.slide-12-timeline-01::after {
+  content: ""; position: absolute; top: 25px; left: 12.5%; right: 12.5%; height: 3px;
+  background: linear-gradient(90deg, #3db4d0, #9beafa);
+  box-shadow: 0 0 9px #78d9e966; pointer-events: none;
+  transform: scaleX(0); transform-origin: left center;
+}
+.active .slide-12-timeline-01::after { animation: pilotLineSweep 1.4s ease-in-out .2s both; }
+@keyframes pilotLineSweep { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce), print {
+  .active .slide-12-timeline-01::after { animation: none; transform: scaleX(1); }
+}
