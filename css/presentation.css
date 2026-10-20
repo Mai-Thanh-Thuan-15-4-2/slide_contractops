@@ -2217,3 +2217,20 @@ p {
 .benefits-with-vtcode .vtcode-approach-list article::before { content: ""; position: absolute; left: 34px; right: auto; top: 18px; width: 8px; height: 14px; border: solid #63d592; border-width: 0 3px 3px 0; transform: rotate(45deg); }
 .benefits-with-vtcode .vtcode-approach-list h3 { font-size: 22px; line-height: 1.2; margin: 0 0 6px; color: #eaf5fb; }
 .benefits-with-vtcode .vtcode-approach-list p { font-size: 16px; line-height: 1.35; }
+
+/* Distinct, restrained colors keep each benefit easy to scan. */
+.benefits-with-vtcode .benefits-summary article,
+.benefits-with-vtcode .vtcode-approach-list article {
+  background: linear-gradient(var(--card-direction, 100deg), var(--card-color), var(--card-shade));
+}
+.benefits-with-vtcode .vtcode-approach-list article { --card-direction: 260deg; }
+.benefits-with-vtcode .benefits-summary article:nth-child(1) { --card-color: #195478; --card-shade: #153b55ed; }
+.benefits-with-vtcode .benefits-summary article:nth-child(2) { --card-color: #17605f; --card-shade: #163f46ed; }
+.benefits-with-vtcode .benefits-summary article:nth-child(3) { --card-color: #494d7d; --card-shade: #303650ed; }
+.benefits-with-vtcode .benefits-summary article:nth-child(4) { --card-color: #35634c; --card-shade: #234638ed; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(1) { --card-color: #705830; --card-shade: #4c402ced; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(2) { --card-color: #764d3b; --card-shade: #50372fed; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(3) { --card-color: #70435d; --card-shade: #49324aed; }
+.benefits-with-vtcode .vtcode-approach-list article:nth-child(4) { --card-color: #505b83; --card-shade: #343e5ced; }
+.benefits-with-vtcode .benefits-summary p,
+.benefits-with-vtcode .vtcode-approach-list p { color: #dce7ec; }
