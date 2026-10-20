@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Giới thiệu phần mềm — Tính năng, Công nghệ & Vận hành</title>
+    <meta
+      name="description"
+      content="Slide giới thiệu phần mềm: tính năng, công nghệ, phân hệ nghiệp vụ và cách triển khai."
+    />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="stylesheet" href="css/presentation.css" />
+  </head>
+  <body>
+    <div id="stage">
+      <div id="deck" class="is-dark">
+        <header id="mast">
+          <div class="brand"><em>V</em>TCODE</div>
+          <div class="project">PHÂN TÍCH · PHÁT TRIỂN · VẬN HÀNH</div>
+        </header>
+        <footer id="slideFoot">
+          <div>TECH & BUSINESS <span class="bar"></span></div>
+          <div id="footTitle">MỞ ĐẦU</div>
+        </footer>
+        <div id="progress" class="deck-div-01"></div>
+        <div id="atmosphere" aria-hidden="true">
+          <div class="atm-mesh"></div>
+          <div class="atm-hatch"></div>
+          <div class="atm-glow atm-glow-a"></div>
+          <div class="atm-glow atm-glow-b"></div>
+          <svg class="atm-arcs" viewBox="0 0 1440 810" preserveAspectRatio="xMidYMid slice">
+            <circle
+              cx="1280"
+              cy="-40"
+              r="420"
+              fill="none"
+              stroke="#6ec8dc"
+              stroke-width="1.3"
+              opacity="0.28"
+            />
+            <circle
+              cx="1280"
+              cy="-40"
+              r="530"
+              fill="none"
+              stroke="#6ec8dc"
+              stroke-width="1.1"
+              opacity="0.16"
+            />
+            <circle
+              cx="1280"
+              cy="-40"
+              r="640"
+              fill="none"
+              stroke="#6ec8dc"
+              stroke-width="1"
+              opacity="0.1"
+            />
+            <path
+              d="M -60 700 A 390 390 0 0 1 430 900"
+              fill="none"
+              stroke="#7ad4e4"
+              stroke-width="1.5"
+              opacity="0.32"
+            />
+            <path
+              d="M -110 650 A 480 480 0 0 1 500 940"
+              fill="none"
+              stroke="#7ad4e4"
+              stroke-width="1.1"
+              opacity="0.16"
+            />
+            <path
+              d="M 920 860 A 300 300 0 0 0 1500 480"
+              fill="none"
+              stroke="#8fd4e8"
+              stroke-width="1.3"
+              opacity="0.22"
+            />
+          </svg>
+        </div>
+        <section
+          class="slide dark cover"
+          data-title="Giới thiệu phần mềm"
+          data-section="MỞ ĐẦU"
+        >
+          <div class="cover-stack">
+            <div class="cover-copy">
+              <div class="cover-overline">CONTRACTOPS · 2026</div>
+              <h1 class="cover-title">Quản lý <span>hợp đồng.</span></h1>
+              <p class="cover-desc">
+                Theo dõi hợp đồng, luồng duyệt và phân quyền trên một hệ thống.
+              </p>
+            </div>
+            <div class="cover-float">
+              <img
+                class="float-icon f1"
+                src="images/ACCOUNTANT.png"
+                alt="Accountant"
+              />
+              <img
+                class="float-icon f2"
+                src="images/IC STAFF.png"
+                alt="I COOL Staff"
+              />
+              <img
+                class="float-icon f3"
+                src="images/ASSETS.png"
+                alt="Quản lý tài sản"
+              />
+              <img
+                class="float-icon f4"
+                src="images/RASA.png"
+                alt="Rasa"
+              />
+              <img
+                class="float-icon f5"
+                src="images/SUSHI TACO.png"
+                alt="Sushi Taco"
+              />
+              <img
+                class="float-icon f6"
+                src="images/APP ICOOL KARAOKE.png"
+                alt="I COOL Karaoke"
+              />
+            </div>
+            <div class="cover-apps">
+              <div class="app-rail" aria-hidden="true"><i></i></div>
+              <div class="app-tile">
+                <div class="app-glyph g1" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M7 3.5h7.2L19 8.2V20a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 6 20V5a1.5 1.5 0 0 1 1-1.5z"
+                    />
+                    <path d="M14 3.8V8h4.4" />
+                    <path d="M9 12.5h6M9 16h4.5" />
+                  </svg>
+                </div>
+                <b>Hồ sơ</b>
+              </div>
+              <div class="app-tile">
+                <div class="app-glyph g2" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="8.2" />
+                    <path d="M8.2 12.3l2.6 2.6 5.2-5.4" />
+                  </svg>
+                </div>
+                <b>Phê duyệt</b>
+              </div>
+              <div class="app-tile">
+                <div class="app-glyph g3" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="9" cy="8.2" r="2.4" />
+                    <circle cx="16.2" cy="8.8" r="1.9" />
+                    <path d="M4.8 18.5c.4-3.1 2.6-4.8 4.2-4.8s3.8 1.7 4.2 4.8" />
+                    <path d="M13.6 18.5c.2-2.2 1.5-3.5 2.6-3.5 1.2 0 2.4 1.2 2.7 3.5" />
+                  </svg>
+                </div>
+                <b>Phân quyền</b>
+              </div>
+              <div class="app-tile">
+                <div class="app-glyph g4" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="8.2" />
+                    <path d="M12 7.6v5l3.2 1.9" />
+                  </svg>
+                </div>
+                <b>Lịch sử</b>
+              </div>
+              <div class="app-tile">
+                <div class="app-glyph g5" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4.5 19.5h15" />
+                    <rect x="6" y="11" width="3" height="6.5" rx="0.6" />
+                    <rect x="10.5" y="7.5" width="3" height="10" rx="0.6" />
+                    <rect x="15" y="9.5" width="3" height="8" rx="0.6" />
+                  </svg>
+                </div>
+                <b>Báo cáo</b>
+              </div>
+              <div class="app-tile">
+                <div class="app-glyph g6" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M9.4 14.6l5.2-5.2M10.2 8.2l.7-1.1a3.4 3.4 0 0 1 5.5 4l-1 1.4M13.8 15.8l-.7 1.1a3.4 3.4 0 1 1-5.5-4l1-1.4"
+                    />
+                  </svg>
+                </div>
+                <b>Link chia sẻ</b>
+              </div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            Chào anh chị. Hôm nay mình giới thiệu phần mềm: hồ sơ đi thế nào,
+            công nghệ dùng gì, và đưa vào vận hành ra sao.
+          </aside>
+        </section>
+        <section
+          class="slide cloud project-experience"
+          data-title="Kinh nghiệm dự án"
+          data-section="KINH NGHIỆM DỰ ÁN"
+        >
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">01 / KINH NGHIỆM DỰ ÁN</p>
+              <h2>Kinh nghiệm từ các dự án thực tế.</h2>
+              <p class="sub">Các dự án phần mềm đã tham gia.</p>
+            </div>
+            <div class="project-experience-grid">
+              <article class="project-experience-item">
+                <div class="project-experience-logo-frame"><img class="project-experience-logo" src="images/ACCOUNTANT.png" alt="Logo Accountant" /></div>
+                <div class="project-experience-copy">
+                  <p class="project-experience-category">KẾ TOÁN</p>
+                  <h3>Accountant</h3>
+                </div>
+              </article>
+              <article class="project-experience-item">
+                <div class="project-experience-logo-frame"><img class="project-experience-logo" src="images/IC STAFF.png" alt="Logo I-COOL Staff" /></div>
+                <div class="project-experience-copy">
+                  <p class="project-experience-category">NHÂN SỰ</p>
+                  <h3>I-COOL Staff</h3>
+                </div>
+              </article>
+              <article class="project-experience-item">
+                <div class="project-experience-logo-frame"><img class="project-experience-logo project-experience-logo--square" src="images/ASSETS.png" alt="Logo Quản lý tài sản" /></div>
+                <div class="project-experience-copy">
+                  <p class="project-experience-category">TÀI SẢN</p>
+                  <h3>Quản lý tài sản</h3>
+                </div>
+              </article>
+              <article class="project-experience-item">
+                <div class="project-experience-logo-frame"><img class="project-experience-logo" src="images/RASA.png" alt="Logo Rasa" /></div>
+                <div class="project-experience-copy">
+                  <p class="project-experience-category">ẨM THỰC</p>
+                  <h3>Rasa</h3>
+                </div>
+              </article>
+              <article class="project-experience-item">
+                <div class="project-experience-logo-frame"><img class="project-experience-logo" src="images/SUSHI TACO.png" alt="Logo Sushi Taco" /></div>
+                <div class="project-experience-copy">
+                  <p class="project-experience-category">ẨM THỰC</p>
+                  <h3>Sushi Taco</h3>
+                </div>
+              </article>
+              <article class="project-experience-item">
+                <div class="project-experience-logo-frame"><img class="project-experience-logo" src="images/APP ICOOL KARAOKE.png" alt="Logo I-COOL Karaoke" /></div>
+                <div class="project-experience-copy">
+                  <p class="project-experience-category">ỨNG DỤNG KARAOKE</p>
+                  <h3>I-COOL Karaoke</h3>
+                </div>
+              </article>
+            </div>
+            <p class="project-experience-more"><strong>10+</strong><span>phần mềm, ứng dụng khác</span></p>
+          </div>
+          <aside class="speaker-notes">
+            Giới thiệu các dự án đã tham gia: Accountant, I-COOL Staff,
+            Quản lý tài sản, Rasa, Sushi Taco và I-COOL Karaoke.
+          </aside>
+        </section>
+        <section
+          class="slide accounting-project"
+          data-title="Dự án kế toán"
+          data-section="DỰ ÁN KẾ TOÁN"
+        >
+          <div class="content">
+            <div class="slide-head accounting-project-head">
+              <div>
+                <p class="eyebrow">02 / DỰ ÁN KẾ TOÁN</p>
+                <h2>Quản lý phiếu &amp; phê duyệt.</h2>
+                <p class="sub">Từ các loại phiếu đến luồng xử lý theo từng cấp.</p>
+              </div>
+              <img class="accounting-project-logo" src="images/ACCOUNTANT.png" alt="Logo Accountant" />
+            </div>
+            <div class="accounting-voucher-types" aria-label="Bốn loại phiếu">
+              <div class="accounting-voucher accounting-voucher-blue">
+                <h3>Đề nghị thanh toán</h3>
+              </div>
+              <div class="accounting-voucher accounting-voucher-violet">
+                <h3>Đề nghị tạm ứng</h3>
+              </div>
+              <div class="accounting-voucher accounting-voucher-orange">
+                <h3>Phiếu chi</h3>
+              </div>
+              <div class="accounting-voucher accounting-voucher-green">
+                <h3>Phiếu thu</h3>
+              </div>
+            </div>
+            <div class="accounting-lifecycle">
+              <ol class="accounting-approval-flow" aria-label="Quy trình xử lý phiếu theo từng cấp">
+                <li class="accounting-approval-step accounting-role-blue" style="--step-delay: 0.10s">
+                  <div class="accounting-step-heading"><span class="accounting-step-number">01</span><h3>Người tạo</h3></div>
+                  <div class="accounting-step-art"><img src="images/slide-03-submission.png" alt="Lập phiếu, bổ sung chứng từ và minh chứng rồi gửi duyệt" /></div>
+                </li>
+                <li class="accounting-approval-step accounting-role-cyan" style="--step-delay: 0.18s">
+                  <div class="accounting-step-heading"><span class="accounting-step-number">02</span><h3>TBP</h3></div>
+                  <div class="accounting-step-art"><img src="images/slide-03-team-review.png" alt="TBP kiểm tra tính hợp lệ: duyệt hoặc trả lại và ghi lý do" /></div>
+                </li>
+                <li class="accounting-approval-step accounting-role-violet" style="--step-delay: 0.26s">
+                  <div class="accounting-step-heading"><span class="accounting-step-number">03</span><h3>TP/QL</h3></div>
+                  <div class="accounting-step-art"><img src="images/slide-03-manager-review.png" alt="TP/QL xét duyệt theo vai trò và thẩm quyền" /></div>
+                </li>
+                <li class="accounting-approval-step accounting-role-orange" style="--step-delay: 0.34s">
+                  <div class="accounting-step-heading"><span class="accounting-step-number">04</span><h3>Kế toán</h3></div>
+                  <div class="accounting-step-art"><img src="images/slide-03-reconciliation.png" alt="Kế toán đối chiếu chứng từ với số liệu" /></div>
+                </li>
+                <li class="accounting-approval-step accounting-role-green" style="--step-delay: 0.42s">
+                  <div class="accounting-step-heading"><span class="accounting-step-number">05</span><h3>Giám đốc</h3></div>
+                  <div class="accounting-step-art"><img src="images/slide-03-director-approval.png" alt="Giám đốc ký duyệt và chốt kết quả" /></div>
+                </li>
+                <li class="accounting-approval-step accounting-role-green" style="--step-delay: 0.50s">
+                  <div class="accounting-step-heading"><span class="accounting-step-number">06</span><h3>Hoàn tất</h3></div>
+                  <div class="accounting-step-art"><img src="images/slide-03-archive.png" alt="Lưu phiếu, tra cứu và xem lịch sử xử lý" /></div>
+                </li>
+              </ol>
+              <div class="accounting-demo" aria-label="Mô phỏng vòng đời phiếu">
+                <div class="accounting-demo-copy">
+                  <span class="accounting-demo-label">MÔ PHỎNG XỬ LÝ PHIẾU</span>
+                  <p id="accountingDemoStatus" role="status" aria-live="off">Người tạo lập phiếu</p>
+                </div>
+                <div class="accounting-demo-files" aria-label="Tài liệu đính kèm">
+                  <span id="accountingDemoVoucher" class="accounting-demo-file is-added">✓ Phiếu</span>
+                  <span id="accountingDemoEvidence" class="accounting-demo-file">+ Chứng từ</span>
+                  <span id="accountingDemoProof" class="accounting-demo-file">+ Minh chứng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            Dự án kế toán gồm Đề nghị thanh toán, Đề nghị tạm ứng, Phiếu chi và Phiếu thu.
+            Luồng xử lý: Người tạo → TBP → TP/QL → Kế toán → Giám đốc.
+            Người tạo lập và gửi phiếu; các cấp xử lý có thể duyệt hoặc từ chối.
+          </aside>
+        </section>
+        <section
+          class="slide record-walkthrough"
+          data-title="Quy trình xử lý hồ sơ"
+          data-section="DEMO"
+        >
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">03 / DEMO</p>
+              <h2>Một hồ sơ đi từ tạo đến xong.</h2>
+              <p class="sub">
+                Ai gửi, ai duyệt, bị trả thì vì sao, bước tiếp theo là ai.
+              </p>
+            </div>
+            <div class="record-journey">
+              <figure class="record-journey-art">
+                <img src="images/slide-04-record-journey.png" alt="Người lập tạo hồ sơ và gửi duyệt theo cấp. Người duyệt hoàn tất hồ sơ hoặc trả lại kèm lý do để người lập bổ sung." />
+              </figure>
+              <div class="record-history">
+                <p class="record-history-overline">MỞ LỊCH SỬ</p>
+                <h3>Theo dõi từng lần xử lý.</h3>
+                <ul>
+                  <li>Ai xử lý và vai trò</li>
+                  <li>Thời gian và kết quả</li>
+                  <li>Ghi chú, lý do trả lại</li>
+                  <li>Người tiếp theo</li>
+                </ul>
+              </div>
+            </div>
+            <!-- 3Dicons by Vijay Verma, CC0: https://3dicons.co/ -->
+            <div class="record-details">
+              <h3>Một hồ sơ gồm</h3>
+              <div class="record-details-list" aria-label="Các thành phần trong hồ sơ">
+                <div class="record-detail-item" tabindex="0" aria-label="Thông tin nhân viên" aria-describedby="recordTip-employee">
+                  <img class="record-detail-3d" src="images/3dicons/boy.png" alt="" aria-hidden="true" width="60" height="60" />
+                  <span class="record-detail-name">Nhân viên</span>
+                  <div class="record-detail-tooltip" id="recordTip-employee" role="tooltip"><strong>Thông tin nhân viên</strong><p>Xác định nhân viên lập hồ sơ và thông tin người đề nghị.</p></div>
+                </div>
+                <div class="record-detail-item" tabindex="0" aria-label="Phòng ban" aria-describedby="recordTip-department">
+                  <img class="record-detail-3d" src="images/3dicons/puzzle.png" alt="" aria-hidden="true" width="60" height="60" />
+                  <span class="record-detail-name">Phòng ban</span>
+                  <div class="record-detail-tooltip" id="recordTip-department" role="tooltip"><strong>Phòng ban</strong><p>Phòng ban của nhân viên và đơn vị liên quan đến hồ sơ.</p></div>
+                </div>
+                <div class="record-detail-item" tabindex="0" aria-label="Ngày tạo hồ sơ" aria-describedby="recordTip-created">
+                  <img class="record-detail-3d" src="images/3dicons/calender.png" alt="" aria-hidden="true" width="60" height="60" />
+                  <span class="record-detail-name">Ngày tạo</span>
+                  <div class="record-detail-tooltip" id="recordTip-created" role="tooltip"><strong>Ngày tạo hồ sơ</strong><p>Thời điểm hồ sơ được khởi tạo để theo dõi quá trình xử lý.</p></div>
+                </div>
+                <div class="record-detail-item" tabindex="0" aria-label="Nội dung hồ sơ" aria-describedby="recordTip-content">
+                  <img class="record-detail-3d" src="images/3dicons/file-text.png" alt="" aria-hidden="true" width="60" height="60" />
+                  <span class="record-detail-name">Nội dung</span>
+                  <div class="record-detail-tooltip" id="recordTip-content" role="tooltip"><strong>Nội dung hồ sơ</strong><p>Nội dung đề nghị và các thông tin nghiệp vụ trong hồ sơ.</p></div>
+                </div>
+                <div class="record-detail-item" tabindex="0" aria-label="File đính kèm" aria-describedby="recordTip-files">
+                  <img class="record-detail-3d" src="images/3dicons/file-plus.png" alt="" aria-hidden="true" width="60" height="60" />
+                  <span class="record-detail-name">File đính kèm</span>
+                  <div class="record-detail-tooltip" id="recordTip-files" role="tooltip"><strong>File đính kèm</strong><p>Chứng từ, minh chứng và các tài liệu bổ sung cho hồ sơ.</p></div>
+                </div>
+                <div class="record-detail-item" tabindex="0" aria-label="Hồ sơ liên quan" aria-describedby="recordTip-related">
+                  <img class="record-detail-3d" src="images/3dicons/link.png" alt="" aria-hidden="true" width="60" height="60" />
+                  <span class="record-detail-name">Liên quan</span>
+                  <div class="record-detail-tooltip" id="recordTip-related" role="tooltip"><strong>Hồ sơ liên quan</strong><p>Các hồ sơ và tài liệu liên quan được liên kết để đối chiếu.</p></div>
+                </div>
+                <div class="record-detail-item" tabindex="0" aria-label="Lịch sử xử lý" aria-describedby="recordTip-history">
+                  <img class="record-detail-3d" src="images/3dicons/clock.png" alt="" aria-hidden="true" width="60" height="60" />
+                  <span class="record-detail-name">Lịch sử</span>
+                  <div class="record-detail-tooltip" id="recordTip-history" role="tooltip"><strong>Lịch sử xử lý</strong><p>Ai xử lý, vai trò, thời gian, kết quả duyệt hoặc từ chối và ghi chú.</p></div>
+                </div>
+                <div class="record-detail-item" tabindex="0" aria-label="Bình luận" aria-describedby="recordTip-comments">
+                  <img class="record-detail-3d" src="images/3dicons/chat-text.png" alt="" aria-hidden="true" width="60" height="60" />
+                  <span class="record-detail-name">Bình luận</span>
+                  <div class="record-detail-tooltip" id="recordTip-comments" role="tooltip"><strong>Bình luận</strong><p>Trao đổi, giải thích và bổ sung thông tin ngay trong hồ sơ.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            Phần này mình mở màn hình thật: việc cần làm, duyệt một hồ sơ, rồi
+            mở lịch sử.
+          </aside>
+        </section>
+        <section
+          class="slide staff-project"
+          data-title="Quản lý nhân sự · I-COOL Staff"
+          data-section="DỰ ÁN I-COOL STAFF"
+        >
+          <div class="content">
+            <div class="slide-head">
+              <img class="staff-brand" src="images/IC STAFF.png" alt="I-COOL Staff" />
+              <p class="eyebrow">04 / DỰ ÁN I-COOL STAFF</p>
+              <h2>Quản lý nhân sự theo cơ cấu tổ chức.</h2>
+              <p class="sub">Từ nhân viên, thời gian làm việc đến vai trò và phạm vi sử dụng phần mềm.</p>
+            </div>
+            <div class="staff-visual-grid">
+              <article class="staff-feature staff-feature-organization" aria-label="Tổ chức nhân sự">
+                  <h3>Tổ chức nhân sự</h3>
+                  <img class="staff-feature-art" src="images/slide-05-organization.png" alt="Tổ chức nhân sự" />
+                  <p class="staff-feature-copy">Quản lý nhân viên theo từng <strong>chi nhánh, phòng ban</strong>. Thông tin nhân sự được gắn với đúng đơn vị công tác.</p>
+                </article>
+              <article class="staff-feature staff-feature-time" aria-label="Công, ca và giờ làm">
+                  <h3>Công · ca · giờ làm</h3>
+                  <img class="staff-feature-art" src="images/slide-05-time.png" alt="Công · ca · giờ làm" />
+                  <p class="staff-feature-copy">Sắp xếp <strong>ca làm</strong>, theo dõi <strong>giờ làm việc</strong> và quản lý <strong>công</strong> của từng nhân viên.</p>
+                </article>
+              <article class="staff-feature staff-feature-access" aria-label="Cấp bậc và phân quyền">
+                  <h3>Cấp bậc · phân quyền</h3>
+                  <img class="staff-feature-art" src="images/slide-05-access.png" alt="Cấp bậc · phân quyền" />
+                  <p class="staff-feature-copy">Thiết lập <strong>cấp bậc, vai trò và quyền hạn</strong>. Xác định phạm vi sử dụng phần mềm theo đơn vị và trách nhiệm.</p>
+                </article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            I-COOL Staff quản lý nhân viên, chi nhánh, phòng ban; công, ca và giờ làm;
+            cấp bậc, vai trò, quyền hạn và phạm vi sử dụng phần mềm.
+            Các hình minh họa chia các chức năng thành ba nhóm quản lý.
+          </aside>
+        </section>
+        <section
+          class="slide asset-project"
+          data-title="Quản lý tài sản"
+          data-section="DỰ ÁN QUẢN LÝ TÀI SẢN"
+        >
+          <div class="content">
+            <div class="slide-head">
+              <img class="asset-brand" src="images/ASSETS.png" alt="Logo Assets" />
+              <p class="eyebrow">05 / DỰ ÁN QUẢN LÝ TÀI SẢN</p>
+              <h2>Từ đề xuất đến quản lý vòng đời tài sản.</h2>
+              <p class="sub">Quản lý nhu cầu mua sắm, phê duyệt và quá trình sử dụng tài sản.</p>
+            </div>
+            <div class="asset-visual-layout">
+              <article class="asset-visual-card asset-visual-proposal">
+                <h3>Đề xuất & phê duyệt</h3>
+                <img class="asset-visual-art" src="images/slide-06-proposal.png" alt="Đề xuất & phê duyệt" />
+                <p class="asset-visual-copy">Từ nhu cầu mua sắm, nhân viên <strong>lập đề xuất và gửi xét duyệt</strong>. Kết quả duyệt hoặc từ chối được thể hiện rõ theo quy trình.</p>
+              </article>
+              <article class="asset-visual-card asset-visual-lifecycle">
+                <h3>Theo dõi vòng đời tài sản</h3>
+                <img class="asset-visual-art" src="images/slide-06-lifecycle.png" alt="Theo dõi vòng đời tài sản" />
+                <p class="asset-visual-copy">Theo dõi từ <strong>đề xuất mua, ghi tăng</strong> đến <strong>bảo trì, khấu hao, bàn giao và nghiệm thu</strong> trong suốt quá trình sử dụng tài sản.</p>
+              </article>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            Dự án gồm đề xuất tài sản, quy trình duyệt và quản lý vòng đời tài sản.
+            Các bước quản lý: Đề xuất mua tài sản → Ghi tăng → Bảo trì, khấu hao → Bàn giao → Nghiệm thu.
+          </aside>
+        </section>
+        <section
+          class="slide"
+          data-title="Mục tiêu phần mềm"
+          data-section="TỔNG QUAN"
+        >
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">06 / MỤC TIÊU</p>
+              <h2>Bám theo cách đơn vị đang làm việc.</h2>
+            </div>
+            <div class="grid3 slide-02-grid3-01">
+              <div class="panel slide-02-panel-01">
+                <div class="slide-02-copy">
+                  <div class="number">01</div>
+                  <h3 class="slide-02-h3-01">Quy trình rõ</h3>
+                  <p class="slide-02-p-01">Ai làm, ai duyệt, hồ sơ đi đâu.</p>
+                </div>
+                <div class="slide-02-art" aria-hidden="true">
+                  <img src="images/slide-02-workflow.png" alt="" />
+                </div>
+              </div>
+              <div class="panel slide-02-panel-02">
+                <div class="slide-02-copy">
+                  <div class="number">02</div>
+                  <h3 class="slide-02-h3-02">Đúng quyền</h3>
+                  <p class="slide-02-p-02">Phân quyền theo vai trò.</p>
+                </div>
+                <div class="slide-02-art" aria-hidden="true">
+                  <img src="images/slide-02-permissions.png" alt="" />
+                </div>
+              </div>
+              <div class="panel slide-02-panel-03">
+                <div class="slide-02-copy">
+                  <div class="number">03</div>
+                  <h3 class="slide-02-h3-03">Dễ thao tác</h3>
+                  <p class="slide-02-p-03">Ít bước, đúng việc cần làm.</p>
+                </div>
+                <div class="slide-02-art" aria-hidden="true">
+                  <img src="images/slide-02-usability.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            Mục tiêu: đúng quy trình, đúng quyền, dễ thao tác.
+          </aside>
+        </section>
+        <section class="slide business-workflow" data-title="Quy trình nghiệp vụ" data-section="QUY TRÌNH NGHIỆP VỤ">
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">07 / QUY TRÌNH NGHIỆP VỤ</p>
+              <h2>Từ tạo phiếu đến xuất bản.</h2>
+              <p class="sub">Từng bước xử lý được nối liền trên cùng một phiếu và bộ tài liệu.</p>
+            </div>
+            <ol class="business-flow" aria-label="Quy trình nghiệp vụ">
+              <li class="business-step business-step-1"><div class="business-step-top"><img class="business-step-art" src="images/slide-08-step-create.png" alt="" aria-hidden="true" /><span class="business-step-number">01</span></div><h3>Tạo phiếu</h3><p>Nhập thông tin và nội dung cần xử lý.</p></li>
+              <li class="business-step business-step-2"><div class="business-step-top"><img class="business-step-art" src="images/slide-08-step-attach.png" alt="" aria-hidden="true" /><span class="business-step-number">02</span></div><h3>Đính kèm</h3><p>Thêm tài liệu, hồ sơ liên quan.</p></li>
+              <li class="business-step business-step-3"><div class="business-step-top"><img class="business-step-art" src="images/slide-08-step-approve.png" alt="" aria-hidden="true" /><span class="business-step-number">03</span></div><h3>Gửi duyệt</h3><p>Chuyển phiếu đến người xét duyệt.</p></li>
+              <li class="business-step business-step-4"><div class="business-step-top"><img class="business-step-art" src="images/slide-08-step-share.png" alt="" aria-hidden="true" /><span class="business-step-number">04</span></div><h3>Chia sẻ</h3><p>Mời người liên quan cùng xem nội dung.</p></li>
+              <li class="business-step business-step-5"><div class="business-step-top"><img class="business-step-art" src="images/slide-08-step-edit.png" alt="" aria-hidden="true" /><span class="business-step-number">05</span></div><h3>Chỉnh sửa</h3><p>Cập nhật phiếu và tài liệu theo góp ý.</p></li>
+              <li class="business-step business-step-6"><div class="business-step-top"><img class="business-step-art" src="images/slide-08-step-discuss.png" alt="" aria-hidden="true" /><span class="business-step-number">06</span></div><h3>Thảo luận</h3><p>Trao đổi để thống nhất nội dung.</p></li>
+              <li class="business-step business-step-7"><div class="business-step-top"><img class="business-step-art" src="images/slide-08-step-publish.png" alt="" aria-hidden="true" /><span class="business-step-number">07</span></div><h3>Xuất bản</h3><p>Xuất bản nội dung đã thống nhất để đưa vào sử dụng.</p></li>
+            </ol>
+          </div>
+          <aside class="speaker-notes">Quy trình nghiệp vụ: Tạo phiếu → Đính kèm → Gửi duyệt → Chia sẻ → Chỉnh sửa → Thảo luận → Xuất bản.</aside>
+        </section>
+        <section class="slide sharing-confirmation" data-title="Chia sẻ để xác nhận" data-section="CHIA SẺ & XÁC NHẬN">
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">08 / CHIA SẺ & XÁC NHẬN</p>
+              <h2>Chia sẻ nội dung để xác nhận.</h2>
+              <p class="sub">Gửi liên kết, nhận xác nhận và theo dõi phản hồi từ người nhận.</p>
+            </div>
+            <ol class="confirmation-flow">
+              <li class="confirmation-step" style="--confirm-delay: 0.15s"><span class="confirmation-number">01</span><img class="confirmation-art" src="images/slide-09-step-select.png" alt="" aria-hidden="true" /><h3>Chọn nội dung</h3><p>Chuẩn bị thông tin và tài liệu cần xác nhận.</p></li>
+<li class="confirmation-step" style="--confirm-delay: 0.27s"><span class="confirmation-number">02</span><img class="confirmation-art" src="images/slide-09-step-send.png" alt="" aria-hidden="true" /><h3>Gửi liên kết</h3><p>Chia sẻ liên kết đến người nhận.</p></li>
+<li class="confirmation-step" style="--confirm-delay: 0.39s"><span class="confirmation-number">03</span><img class="confirmation-art" src="images/slide-09-step-confirm.png" alt="" aria-hidden="true" /><h3>Người nhận xác nhận</h3><p>Xem nội dung và gửi xác nhận hoặc ý kiến.</p></li>
+<li class="confirmation-step" style="--confirm-delay: 0.51s"><span class="confirmation-number">04</span><img class="confirmation-art" src="images/slide-09-step-review.png" alt="" aria-hidden="true" /><h3>Theo dõi phản hồi</h3><p>Xem kết quả xác nhận để tiếp tục xử lý.</p></li>
+            </ol>
+            <div class="confirmation-views">
+              <article class="confirmation-view confirmation-view-1"><p class="confirmation-view-label">NỘI DUNG CHIA SẺ</p><h3>Người nhận xem gì?</h3><p class="confirmation-view-description">Thông tin và tài liệu được chọn để gửi xác nhận.</p><div class="confirmation-fields"><span>Thông tin cần xác nhận</span><span>Tài liệu đính kèm</span></div></article>
+<article class="confirmation-view confirmation-view-2"><p class="confirmation-view-label">PHẢN HỒI TỪ NGƯỜI NHẬN</p><h3>Người nhận phản hồi thế nào?</h3><p class="confirmation-view-description">Xác nhận nội dung hoặc bổ sung ý kiến trên màn hình chia sẻ.</p><div class="confirmation-fields"><span>Xác nhận</span><span>Ý kiến bổ sung</span></div></article>
+            </div>
+            <p class="confirmation-note">Màn hình chia sẻ có nội dung dữ liệu và cách phản hồi riêng so với màn hình nghiệp vụ trong hệ thống.</p>
+          </div>
+          <aside class="speaker-notes">Quy trình chia sẻ nhằm lấy xác nhận: chọn nội dung, gửi liên kết, người nhận xem và phản hồi, đơn vị theo dõi kết quả. Nội dung dữ liệu và phản hồi ở màn hình chia sẻ được trình bày riêng, khác với màn hình nghiệp vụ nội bộ.</aside>
+        </section>
+        <section class="slide permissions-slide" data-title="Quyền hạn & phạm vi truy cập" data-section="QUYỀN HẠN">
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">09 / QUYỀN HẠN</p>
+              <h2>Đúng vai trò, đúng phạm vi, đúng quyền.</h2>
+              <p class="sub">Quyền truy cập được thiết lập theo trách nhiệm và phạm vi công việc.</p>
+            </div>
+            <div class="permissions-layout">
+              <figure class="permissions-art">
+                <img src="images/slide-10-permissions.png" alt="" aria-hidden="true" />
+              </figure>
+              <div class="permissions-rules">
+                <article class="permissions-rule permissions-rule-1" style="--permission-delay: 0.20s"><h3>Vai trò trong quy trình</h3><p>Xác định trách nhiệm của người tạo phiếu, người duyệt và quản trị viên.</p></article>
+<article class="permissions-rule permissions-rule-2" style="--permission-delay: 0.35s"><h3>Phạm vi dữ liệu</h3><p>Giới hạn thông tin được xem và xử lý theo đơn vị, phòng ban.</p></article>
+<article class="permissions-rule permissions-rule-3" style="--permission-delay: 0.50s"><h3>Thao tác được phép</h3><p>Xem, chỉnh sửa, gửi duyệt, chia sẻ và xuất bản theo quyền được cấp.</p></article>
+              </div>
+            </div>
+            <div class="permissions-change">
+              <h3>Khi nhân sự thay đổi</h3>
+              <div><ul><li>Khóa tài khoản hoặc đổi vai trò</li><li>Ngắt phiên đang mở</li><li>Chuyển hồ sơ đang chờ</li></ul><p>Lịch sử các lần duyệt trước vẫn được giữ lại.</p></div>
+            </div>
+          </div>
+          <aside class="speaker-notes">Phân quyền theo vai trò, phạm vi dữ liệu và thao tác được phép. Khi nghỉ việc hoặc chuyển vị trí, quản trị viên khóa tài khoản hoặc đổi vai trò, ngắt phiên đang mở và chuyển hồ sơ đang chờ sang người còn thẩm quyền. Lịch sử duyệt cũ được giữ lại.</aside>
+        </section>
+        <section
+          class="slide reporting-slide"
+          data-title="Báo cáo & Đo lường"
+          data-section="ĐO LƯỜNG"
+        >
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">10 / BÁO CÁO VẬN HÀNH</p>
+              <h2>Số liệu để xem quy trình đang chạy ra sao.</h2>
+              <p class="sub">
+                Thời gian xử lý, chỗ bị kẹt, hồ sơ bị trả, mức dùng hệ thống.
+              </p>
+            </div>
+            <div class="grid4 slide-11-grid4-01">
+              <div class="panel slide-11-panel-01">
+                <div class="number">01</div>
+                <img class="report-metric-art" src="images/slide-11-duration.png" alt="" aria-hidden="true" />
+                <h3 class="slide-11-h3-01">Thời gian xử lý</h3>
+                <p class="slide-11-p-01">
+                  Từ lúc tạo đến lúc xong một hồ sơ.
+                </p>
+              </div>
+              <div class="panel slide-11-panel-02">
+                <div class="number">02</div>
+                <img class="report-metric-art" src="images/slide-11-bottleneck.png" alt="" aria-hidden="true" />
+                <h3 class="slide-11-h3-02">Điểm nghẽn quy trình</h3>
+                <p class="slide-11-p-02">
+                  Bước nào chậm hoặc tồn nhiều.
+                </p>
+              </div>
+              <div class="panel slide-11-panel-03">
+                <div class="number">03</div>
+                <img class="report-metric-art" src="images/slide-11-returns.png" alt="" aria-hidden="true" />
+                <h3 class="slide-11-h3-03">Tỷ lệ trả lại hồ sơ</h3>
+                <p class="slide-11-p-03">
+                  Lý do trả, để sửa biểu mẫu đầu vào.
+                </p>
+              </div>
+              <div class="panel slide-11-panel-04">
+                <div class="number">04</div>
+                <img class="report-metric-art" src="images/slide-11-activity.png" alt="" aria-hidden="true" />
+                <h3 class="slide-11-h3-04">Mức độ tương tác</h3>
+                <p class="slide-11-p-04">
+                  Bao nhiêu việc được làm xong trên hệ thống.
+                </p>
+              </div>
+            </div>
+            <div class="outcome">
+              Số liệu để lãnh đạo và phòng ban xem chỗ chậm, chỗ sai, rồi chỉnh
+              quy trình.
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            Dashboard có thời gian xử lý, bước bị kẹt, hồ sơ trả lại. Có số thì
+            mới bàn được phần mềm có đỡ việc thật không.
+          </aside>
+        </section>
+        <section
+          class="slide"
+          data-title="Kế hoạch chạy thử (Pilot)"
+          data-section="CHẠY THỬ"
+        >
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">11 / CHẠY THỬ 30 NGÀY (PILOT)</p>
+              <h2>30 ngày chạy trên hồ sơ thật, chia 4 tuần.</h2>
+              <p class="sub">
+                Người sẽ dùng hệ thống tự thao tác, không chạy hộ.
+              </p>
+            </div>
+            <div class="timeline slide-12-timeline-01">
+              <div class="timecol">
+                <div class="time-dot">01</div>
+                <div class="timebox">
+                  <div class="number">TUẦN 1</div>
+                  <strong>Chuẩn bị & Đào tạo</strong>
+                  <p>
+                    Danh mục, tài khoản, hướng dẫn thao tác.
+                  </p>
+                </div>
+              </div>
+              <div class="timecol">
+                <div class="time-dot">02</div>
+                <div class="timebox">
+                  <div class="number">TUẦN 2</div>
+                  <strong>Chạy thử nghiệp vụ</strong>
+                  <p>
+                    Tạo, gửi duyệt, từ chối, các tình huống hay gặp.
+                  </p>
+                </div>
+              </div>
+              <div class="timecol">
+                <div class="time-dot">03</div>
+                <div class="timebox">
+                  <div class="number">TUẦN 3</div>
+                  <strong>Ghi nhận & Tinh chỉnh</strong>
+                  <p>
+                    Góp ý, chỉnh chỗ vướng.
+                  </p>
+                </div>
+              </div>
+              <div class="timecol">
+                <div class="time-dot">04</div>
+                <div class="timebox">
+                  <div class="number">TUẦN 4</div>
+                  <strong>Đánh giá nghiệm thu</strong>
+                  <p>
+                    Rà quy trình, xem số liệu, chốt có chạy chính thức được không.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="soft-note slide-12-soft-note-01">
+              Hết 30 ngày, người dùng đã thao tác được trên hồ sơ thật trước khi
+              Go-live.
+            </div>
+          </div>
+          <aside class="speaker-notes">
+            30 ngày, 4 tuần. Làm trên hồ sơ thật. Ghi chỗ vướng, chỉnh, rồi mới
+            chạy chính thức.
+          </aside>
+        </section>
+        <section
+          class="slide operations-slide"
+          data-title="Vận hành chính thức"
+          data-section="VẬN HÀNH"
+        >
+          <div class="content">
+            <div class="slide-head">
+              <p class="eyebrow">12 / VẬN HÀNH CHÍNH THỨC & HỖ TRỢ</p>
+              <h2>Sẵn sàng vận hành, có đội ngũ hỗ trợ.</h2>
+              <p class="sub">Kiểm tra trước khi triển khai, theo dõi và hỗ trợ trong quá trình sử dụng.</p>
+            </div>
+            <div class="operations-grid">
+              <article class="operations-card operations-card-ready"><div class="operations-card-head"><div><p class="operations-label">CHUẨN BỊ TRIỂN KHAI</p><h3>Sẵn sàng triển khai</h3></div><img class="operations-art" src="images/slide-13-ready.png" alt="" aria-hidden="true" /></div><ul><li>Luồng nghiệp vụ đã chạy với dữ liệu thật</li><li>Các lỗi phát hiện đã được xử lý</li><li>Phân quyền và bảo mật đã được kiểm tra</li><li>Có phương án sao lưu và khôi phục dữ liệu</li></ul></article>
+              <article class="operations-card operations-card-support"><div class="operations-card-head"><div><p class="operations-label">VẬN HÀNH & HỖ TRỢ</p><h3>Đội ngũ hỗ trợ kỹ thuật</h3></div><img class="operations-art" src="images/slide-13-support.png" alt="" aria-hidden="true" /></div><ul><li>Tiếp nhận và theo dõi sự cố</li><li>Ưu tiên xử lý theo mức độ ảnh hưởng</li><li>Cập nhật định kỳ, bàn giao tài liệu</li><li>Hỗ trợ khi phát sinh thêm nghiệp vụ</li></ul></article>
+            </div>
+          </div>
+          <aside class="speaker-notes">Trước khi vận hành chính thức, kiểm tra luồng nghiệp vụ với dữ liệu thật, xử lý lỗi, rà soát phân quyền, bảo mật và phương án sao lưu, khôi phục. Sau triển khai, đội ngũ hỗ trợ kỹ thuật tiếp nhận sự cố, xử lý theo mức độ ưu tiên, cập nhật tài liệu và hỗ trợ khi nghiệp vụ phát sinh.</aside>
+        </section>
+        <section
+          class="slide dark closing-slide"
+          data-title="Tổng kết & Thảo luận"
+          data-section="KẾT THÚC"
+        >
+          <div class="content">
+            <div class="slide-head closing-head">
+              <p class="eyebrow">TỔNG KẾT</p>
+              <h2>Chốt ba việc này<br />trước khi <span>triển khai.</span></h2>
+              <img class="closing-art" src="images/slide-14-closing.png" alt="" aria-hidden="true" />
+            </div>
+            <ol class="closing-steps"><li style="--closing-delay: 0.20s"><span class="closing-step-number">01</span><h3>Thống nhất quy trình</h3><p>Luồng thật, ai được duyệt, các trường hợp đặc thù.</p></li><li style="--closing-delay: 0.35s"><span class="closing-step-number">02</span><h3>Đúng việc cần làm</h3><p>Tính năng gắn với tạo, duyệt, theo dõi. Bỏ bước thừa.</p></li><li style="--closing-delay: 0.50s"><span class="closing-step-number">03</span><h3>Dùng thử trên phần mềm thật</h3><p>Xem một hồ sơ đi hết luồng trước khi quyết định chạy lâu dài.</p></li></ol>
+            <p class="closing-thanks">Cảm ơn anh chị đã nghe phần giới thiệu.</p>
+          </div>
+          <aside class="speaker-notes">Cảm ơn anh chị. Giờ mình mở phần mềm cho anh chị hỏi và thao tác thử.</aside>
+        </section>
+      </div>
+    </div>
+    <button class="edge-nav edge-nav-prev" id="edgePrev" type="button" aria-label="Slide trước" title="Slide trước" hidden>
+      <span aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m15 6-6 6 6 6" /></svg></span>
+    </button>
+    <button class="edge-nav edge-nav-next" id="edgeNext" type="button" aria-label="Slide tiếp" title="Slide tiếp" hidden>
+      <span aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="m9 6 6 6-6 6" /></svg></span>
+    </button>
+    <div id="keyboardHelp">
+      ← → chuyển slide · G xem tổng quan · N ghi chú · F toàn màn hình
+    </div>
+    <div id="controls">
+      <span id="counter">01 / 14</span>
+      <button
+        class="control"
+        id="prev"
+        title="Slide trước (←)"
+        aria-label="Slide trước"
+      >
+        ←
+      </button>
+      <button
+        class="control"
+        id="next"
+        title="Slide tiếp (→)"
+        aria-label="Slide tiếp"
+      >
+        →
+      </button>
+      <button
+        class="control"
+        id="overviewButton"
+        title="Xem tổng quan (G)"
+        aria-label="Tổng quan"
+      >
+        ▦
+      </button>
+      <button
+        class="control"
+        id="noteButton"
+        title="Ghi chú thuyết trình (N)"
+        aria-label="Ghi chú"
+      >
+        ▤
+      </button>
+      <button
+        class="control"
+        id="fullButton"
+        title="Toàn màn hình (F)"
+        aria-label="Toàn màn hình"
+      >
+        ⛶
+      </button>
+    </div>
+    <div id="speaker" role="complementary">
+      <div class="notes-title">GỢI Ý NÓI KHI THUYẾT TRÌNH</div>
+      <div id="noteText" class="notes-text"></div>
+    </div>
+    <div id="overview" role="dialog" aria-label="Tổng quan các slide">
+      <div class="between">
+        <div>
+          <h2>Tổng quan bài trình bày</h2>
+          <p>Bấm vào một slide để chuyển đến · G hoặc Esc để đóng</p>
+        </div>
+        <button class="control" id="closeOverview" aria-label="Đóng">✕</button>
+      </div>
+      <div id="tiles"></div>
+    </div>
+    <script src="js/presentation.js"></script>
+  </body>
+</html>
