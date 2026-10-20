@@ -2070,3 +2070,46 @@ p {
 @media (prefers-reduced-motion: reduce), print {
   .pain-slide.active .slide-head, .pain-slide.active .pain-visual, .pain-slide.active .pain-item { animation: none; opacity: 1; transform: none; }
 }
+
+/* Accounting implementation case study. */
+.case-head { position: relative; padding-right: 110px; }
+.case-slide .case-head h2 { font-size: 44px; }
+.case-logo { position: absolute; right: 0; top: 0; width: 86px; height: 86px; object-fit: contain; border-radius: 16px; }
+.case-grid { display: grid; grid-template-columns: 1fr 1fr .9fr; gap: 20px; margin-top: 28px; }
+.case-panel, .case-metrics { border: 1px solid #79b6cf36; background: #14364a99; border-radius: 16px; padding: 24px; }
+.case-before { border-top: 3px solid #e6b59c; }
+.case-after { border-top: 3px solid #78d9ce; }
+.case-phase { color: #e6b59c; font-size: 12px; font-weight: 700; letter-spacing: .12em; margin: 0 0 14px; }
+.case-after .case-phase { color: #78d9ce; }
+.case-panel h3 { font-size: 26px; line-height: 1.22; min-height: 64px; margin: 0 0 20px; }
+.case-panel ul { margin: 0; padding-left: 17px; display: grid; gap: 20px; }
+.case-panel li { font-size: 18px; line-height: 1.43; color: #bed3e0; padding-left: 3px; }
+.case-panel li::marker { color: #78d9e9; }
+.case-panel strong { font-weight: 600; color: #eff7fc; }
+.case-metrics { background: linear-gradient(150deg,#164d5cbd,#13334799); }
+.case-metrics h3 { font-size: 20px; margin: 0 0 16px; color: #d2eaf2; }
+.case-metric-before strong { display: block; font-size: 42px; line-height: 1.1; color: #e6b59c; }
+.case-metric-before strong span, .case-metric-now strong span { font-size: .58em; }
+.case-metric-before p, .case-metric-now p { font-size: 16px; line-height: 1.4; margin: 6px 0 0; color: #c3dce5; }
+.case-metric-now { margin-top: 22px; border-top: 1px solid #a2d4e12b; padding-top: 20px; }
+.case-metric-now strong { display: block; font-size: 52px; line-height: 1.1; color: #78d9ce; white-space: nowrap; }
+.case-range { display: flex; height: 14px; border-radius: 8px; overflow: hidden; margin-top: 18px; }
+.case-range span:nth-child(1) { width: 60%; background: #64cfc3; }
+.case-range span:nth-child(2) { width: 20%; background: repeating-linear-gradient(135deg,#64cfc388 0 4px,#64cfc322 4px 8px); }
+.case-range span:nth-child(3) { width: 20%; background: #8eb1c13b; }
+.case-scale { position: relative; height: 24px; font-size: 11px; color: #9fc3d2; margin-top: 6px; }
+.case-scale span { position: absolute; }
+.case-scale span:nth-child(1) { left: 0; }
+.case-scale span:nth-child(2) { left: 60%; transform: translateX(-50%); }
+.case-scale span:nth-child(3) { left: 80%; transform: translateX(-50%); }
+.case-scale span:nth-child(4) { right: 0; }
+.case-metric-note { font-size: 15px; line-height: 1.42; margin: 8px 0 0; color: #bed3e0; }
+.case-source { font-size: 13px; color: #97b7c9; line-height: 1.4; margin: 15px 0 0; }
+.case-slide.active .case-head { animation: goalReveal .6s ease-out both; }
+.case-slide.active .case-before { animation: goalReveal .65s ease-out .15s both; }
+.case-slide.active .case-after { animation: goalReveal .65s ease-out .3s both; }
+.case-slide.active .case-metrics { animation: goalReveal .7s ease-out .45s both; }
+.case-slide.active .case-source { animation: goalReveal .6s ease-out .55s both; }
+@media (prefers-reduced-motion: reduce), print {
+  .case-slide.active .case-head, .case-slide.active .case-panel, .case-slide.active .case-metrics, .case-slide.active .case-source { animation: none; opacity: 1; transform: none; }
+}
