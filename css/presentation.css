@@ -2072,9 +2072,9 @@ p {
 }
 
 /* Accounting case study: illustration and open editorial layout. */
-.case-head { position: relative; padding-right: 110px; }
+.case-head { position: relative; padding-right: 244px; }
 .case-slide .case-head h2 { font-size: 52px; }
-.case-logo { position: absolute; right: 0; top: 0; width: 80px; height: 80px; object-fit: contain; }
+.case-logo { position: absolute; right: 0; top: 0; width: 220px; height: 86px; padding: 10px 14px; object-fit: contain; background: #fff; border-radius: 6px; box-shadow: 0 5px 20px #0002; }
 .case-editorial { display: grid; grid-template-columns: 2.7fr 1fr; gap: 40px; margin-top: 30px; align-items: center; }
 .case-phase-row, .case-outcomes { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
 .case-phase-row { border-bottom: 1px solid #a4c9d52e; padding-bottom: 12px; }
