@@ -2234,3 +2234,18 @@ p {
 .benefits-with-vtcode .vtcode-approach-list article:nth-child(4) { --card-color: #505b83; --card-shade: #343e5ced; }
 .benefits-with-vtcode .benefits-summary p,
 .benefits-with-vtcode .vtcode-approach-list p { color: #dce7ec; }
+
+/* Stagger architecture messages toward the illustration. */
+.architecture-summary { gap: 16px; position: relative; z-index: 1; }
+.architecture-summary article {
+  width: calc(100% - 24px); min-height: 108px;
+  padding: 20px 28px 20px 44px;
+  border: 1px solid #b5d7e329; border-radius: 6px;
+  background: linear-gradient(105deg, var(--architecture-color), var(--architecture-shade));
+}
+.architecture-summary article:nth-child(1) { margin-left: 24px; --architecture-color: #194e70; --architecture-shade: #16364deb; }
+.architecture-summary article:nth-child(2) { margin-left: -12px; --architecture-color: #195b58; --architecture-shade: #163e42eb; }
+.architecture-summary article:nth-child(3) { margin-left: -48px; --architecture-color: #494d77; --architecture-shade: #30374feb; }
+.architecture-summary article::before { left: 21px; top: 24px; width: 3px; height: 24px; border-radius: 2px; }
+.architecture-summary h3 { font-size: 26px; margin-bottom: 8px; }
+.architecture-summary p { font-size: 18px; color: #dce7ec; }
