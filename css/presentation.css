@@ -2157,9 +2157,9 @@ p {
 .operating-tips .slide-head h2 { font-size: 46px; }
 .operating-tips-layout { display: grid; grid-template-columns: 1.18fr 1fr; align-items: center; gap: 45px; margin-top: 25px; }
 .operating-tips-hero { display: block; width: 100%; height: 400px; object-fit: contain; }
-.operating-tips-summary { display: grid; gap: 10px; } .operating-tips-summary article { display: grid; grid-template-columns: .85fr 1.4fr; align-items: center; gap: 18px; min-height: 98px; padding: 12px 18px; background: #173d50b3; border: 1px solid #86bdcf45; border-radius: 4px; }
-.operating-tips-summary h3 { color: #eaf5fb; font-size: 22px; font-weight: 600; line-height: 1.25; margin: 0; }
-.operating-tips-summary p { color: #b4cedd; font-size: 17px; line-height: 1.4; margin: 0; }
+.operating-tips-summary { display: grid; gap: 10px; } .operating-tips-summary article { display: grid; grid-template-columns: 1fr; align-content: center; gap: 8px; min-height: 104px; padding: 12px 18px; background: #173d50b3; border: 1px solid #86bdcf45; border-radius: 4px; }
+.operating-tips-summary h3 { display: flex; align-items: center; gap: 18px; white-space: nowrap; color: #eaf5fb; font-size: 22px; font-weight: 600; line-height: 1.25; margin: 0; }
+.operating-tips-summary h3::after { content: ""; flex: 1; border-top: 1px solid #86bdcf55; } .operating-tips-summary p { text-align: right; color: #b4cedd; font-size: 17px; line-height: 1.4; margin: 0; }
 .operating-tips-note { margin: 20px 0 0; padding-top: 16px; border-top: 1px solid #96c4d432; color: #a9c6d6; font-size: 15px; line-height: 1.5; }
 .operating-tips-note strong { color: #78d9e9; font-weight: 600; margin-right: 20px; }
 .operating-tips.active .slide-head { animation: goalReveal .6s ease-out both; }
