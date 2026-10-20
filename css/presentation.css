@@ -2170,3 +2170,20 @@ p {
 @media (prefers-reduced-motion: reduce), print {
   .operating-tips.active .slide-head, .operating-tips.active .operating-tips-hero, .operating-tips.active .operating-tips-summary article, .operating-tips.active .operating-tips-note { animation: none; opacity: 1; transform: none; }
 }
+
+/* General benefits and VTCODE's delivery approach. */
+.benefits-with-vtcode { grid-template-columns: 1fr 1fr; align-items: start; gap: 46px; margin-top: 24px; }
+.benefits-column-title { font-size: 23px; font-weight: 600; color: #b9d7e4; margin: 0 0 17px; line-height: 1.2; }
+.benefits-with-vtcode .benefits-summary article { min-height: 88px; padding-top: 13px; padding-bottom: 13px; }
+.benefits-with-vtcode .benefits-summary h3 { font-size: 24px; }
+.benefits-with-vtcode .benefits-summary p { font-size: 17px; }
+.vtcode-approach { border-left: 1px solid #8cb4c43b; padding-left: 34px; }
+.vtcode-approach > .benefits-column-title { color: #78d9e9; }
+.vtcode-approach-list { display: grid; gap: 22px; padding-top: 9px; }
+.vtcode-approach-list h3 { font-size: 24px; color: #edf7fc; font-weight: 600; margin: 0 0 7px; }
+.vtcode-approach-list p { font-size: 18px; line-height: 1.4; color: #b4cedd; margin: 0; }
+.vtcode-approach .benefits-hero { width: 310px; height: 177px; margin: 8px 0 0 auto; }
+.digitization-benefits.active .vtcode-approach-list article { animation: goalReveal .65s ease-out var(--approach-delay) both; }
+@media (prefers-reduced-motion: reduce), print {
+  .digitization-benefits.active .vtcode-approach-list article { animation: none; opacity: 1; transform: none; }
+}
