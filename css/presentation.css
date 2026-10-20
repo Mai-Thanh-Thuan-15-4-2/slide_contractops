@@ -2027,11 +2027,11 @@ p {
   .operations-slide.active .operations-art { animation: none; opacity: 1; transform: none; }
 }
 /* Slide 14: closing thank-you with supporting artwork. */
-.closing-slide .closing-content { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 28px; min-height: 570px; }
+.closing-slide .closing-content { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; column-gap: 28px; row-gap: 10px; min-height: 570px; }
 .closing-head { position: relative; }
 .closing-slide .closing-head h2 { font-size: 72px; line-height: 1.12; margin: 24px 0 0; letter-spacing: -.025em; }
 .closing-head h2 span { color: #78d9e9; }
-.closing-art { display: block; width: 100%; height: 430px; object-fit: contain; pointer-events: none; }
+.closing-art { display: block; width: 100%; height: 370px; object-fit: contain; pointer-events: none; }
 .closing-slide.active .closing-head .eyebrow { animation: goalReveal .55s ease-out both; }
 .closing-slide.active .closing-head h2 { animation: goalReveal .75s ease-out .1s both; }
 .closing-slide.active .closing-art { animation: goalArtReveal .9s ease-out .25s both; }
@@ -2039,4 +2039,17 @@ p {
   .closing-slide.active .closing-head .eyebrow,
   .closing-slide.active .closing-head h2,
   .closing-slide.active .closing-art { animation: none; opacity: 1; transform: none; }
+}
+
+.closing-contact { grid-column: 1 / -1; border-top: 1px solid #70d9e940; padding-top: 22px; }
+.closing-contact h3 { font-size: 19px; color: #78d9e9; margin: 0 0 22px; font-weight: 600; }
+.closing-contact-grid { display: grid; grid-template-columns: .8fr 1fr 1.9fr; gap: 30px; }
+.closing-contact-item { display: flex; align-items: flex-start; gap: 14px; }
+.closing-contact-item svg { width: 23px; height: 23px; flex: 0 0 23px; fill: none; stroke: #78d9e9; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; margin-top: 2px; }
+.closing-contact-item h4 { font-size: 17px; color: #eef7fc; margin: 0 0 8px; font-weight: 600; }
+.closing-contact-item p, .closing-contact-item a { font-size: 18px; line-height: 1.5; color: #b7d0df; margin: 0; text-decoration: none; }
+.closing-contact-item a:hover { color: #78d9e9; text-decoration: underline; }
+.closing-slide.active .closing-contact { animation: goalReveal .7s ease-out .45s both; }
+@media (prefers-reduced-motion: reduce), print {
+  .closing-slide.active .closing-contact { animation: none; opacity: 1; transform: none; }
 }
