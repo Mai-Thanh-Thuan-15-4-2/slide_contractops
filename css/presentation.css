@@ -2311,4 +2311,4 @@ p {
 #mast .cover-partner-divider { color: #a4c9d5; font-size: 22px; font-weight: 400; }
 #mast .cover-partner img { display: block; width: 105px; height: 48px; object-fit: contain; }
 
-#mast .vtcode-brand-logo { display: block; width: 160px; height: 54px; padding: 6px 8px; object-fit: contain; background: #fff; border-radius: 4px; }
+#mast .vtcode-brand-logo { display: block; width: 144px; height: 46px; padding: 5px 8px; object-fit: contain; background: #c8d8df; border-radius: 6px; opacity: .9; }
