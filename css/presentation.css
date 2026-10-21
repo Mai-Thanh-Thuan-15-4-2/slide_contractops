@@ -2319,3 +2319,24 @@ p {
 #mast .mast-chapter-line { width: 28px; height: 1px; background: #78d9e97a; }
 #deck:has(.cover.active) #mast .mast-chapter { display: none; }
 #deck:not(:has(.cover.active)) #mast .brand { display: none; }
+
+/* Opening agenda introduces the two presentation parts. */
+.agenda-parts { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 64px; margin-top: 34px; }
+.agenda-part { padding: 22px 30px 26px; background: linear-gradient(135deg,#17465d66,#102e4222); border-top: 2px solid #68d1e7; }
+.agenda-part:nth-child(2) { border-top-color: #8bd9bb; background: linear-gradient(135deg,#1d514e55,#102e4222); }
+.agenda-part-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.agenda-number { font-size: 70px; line-height: 1; font-weight: 700; color: #78d9e95c; }
+.agenda-part-top svg { width: 62px; height: 62px; fill: none; stroke: #78d9e9; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.agenda-part:nth-child(2) .agenda-part-top svg { stroke: #8bd9bb; }
+.agenda-label { color: #78d9e9; font-size: 12px; letter-spacing: .14em; font-weight: 700; margin: 0 0 10px; }
+.agenda-part:nth-child(2) .agenda-label { color: #8bd9bb; }
+.agenda-part h3 { font-size: 32px; line-height: 1.2; color: #eef7fc; margin: 0 0 22px; }
+.agenda-part ul { list-style: none; margin: 0; padding: 0; }
+.agenda-part li { position: relative; padding: 10px 0 10px 22px; color: #c4dce6; font-size: 20px; line-height: 1.3; border-top: 1px solid #a4c9d51f; }
+.agenda-part li::before { content: ""; position: absolute; left: 0; top: 22px; width: 9px; height: 1px; background: #78d9e9; }
+.agenda-slide.active .slide-head { animation: goalReveal .6s ease-out both; }
+.agenda-slide.active .agenda-part { animation: goalReveal .7s ease-out .15s both; }
+.agenda-slide.active .agenda-part:nth-child(2) { animation-delay: .3s; }
+@media (prefers-reduced-motion: reduce), print {
+  .agenda-slide.active .slide-head, .agenda-slide.active .agenda-part { animation: none; opacity: 1; transform: none; }
+}

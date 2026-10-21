@@ -144,10 +144,11 @@
     const sl = slides[current];
     const contractStart = slides.findIndex((slide) => slide.matches(".pain-slide"));
     const isContractPart = contractStart >= 0 && current >= contractStart;
-    document.getElementById("mastPart").textContent = isContractPart ? "PHẦN 2" : "PHẦN 1";
-    document.getElementById("mastChapter").textContent = isContractPart
+    const isAgenda = sl.matches(".agenda-slide");
+    document.getElementById("mastPart").textContent = isAgenda ? "TỔNG QUAN" : (isContractPart ? "PHẦN 2" : "PHẦN 1");
+    document.getElementById("mastChapter").textContent = isAgenda ? "NỘI DUNG TRÌNH BÀY" : (isContractPart
       ? "DỰ ÁN QUẢN LÝ HỢP ĐỒNG"
-      : "GIỚI THIỆU VỀ CHÚNG TÔI";
+      : "GIỚI THIỆU VỀ CHÚNG TÔI");
     caseProgress.setVisible(sl.matches(".case-slide") && !overview.classList.contains("visible"));
     accountingDemo.setVisible(sl.matches(".accounting-project") && !overview.classList.contains("visible"));
     deck.classList.add("is-dark");
