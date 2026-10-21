@@ -2312,3 +2312,10 @@ p {
 #mast .cover-partner img { display: block; width: 105px; height: 48px; object-fit: contain; }
 
 #mast .vtcode-brand-logo { display: block; width: 144px; height: 46px; padding: 5px 8px; object-fit: contain; background: #c8d8df; border-radius: 6px; opacity: .9; }
+
+/* Section labels replace the brand after the opening slide. */
+#mast .mast-chapter { display: flex; align-items: center; gap: 14px; font-size: 14px; font-weight: 600; letter-spacing: .09em; color: #c4dce6; }
+#mast #mastPart { color: #78d9e9; font-size: 12px; letter-spacing: .13em; }
+#mast .mast-chapter-line { width: 28px; height: 1px; background: #78d9e97a; }
+#deck:has(.cover.active) #mast .mast-chapter { display: none; }
+#deck:not(:has(.cover.active)) #mast .brand { display: none; }

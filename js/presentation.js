@@ -142,6 +142,12 @@
     current = Math.max(0, Math.min(total - 1, n));
     slides.forEach((sl, i) => sl.classList.toggle("active", i === current));
     const sl = slides[current];
+    const contractStart = slides.findIndex((slide) => slide.matches(".pain-slide"));
+    const isContractPart = contractStart >= 0 && current >= contractStart;
+    document.getElementById("mastPart").textContent = isContractPart ? "PHẦN 2" : "PHẦN 1";
+    document.getElementById("mastChapter").textContent = isContractPart
+      ? "DỰ ÁN QUẢN LÝ HỢP ĐỒNG"
+      : "GIỚI THIỆU VỀ CHÚNG TÔI";
     caseProgress.setVisible(sl.matches(".case-slide") && !overview.classList.contains("visible"));
     accountingDemo.setVisible(sl.matches(".accounting-project") && !overview.classList.contains("visible"));
     deck.classList.add("is-dark");
