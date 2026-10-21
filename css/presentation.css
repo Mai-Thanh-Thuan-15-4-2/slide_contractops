@@ -2356,3 +2356,8 @@ p {
 @media (prefers-reduced-motion: reduce), print {
   .part-two-divider.active .part-two-copy, .part-two-divider.active .part-two-mark { animation: none; opacity: 1; transform: none; }
 }
+
+/* Keep the closing salutation together across scaled presentation sizes. */
+.closing-slide .closing-content { grid-template-columns: 1.35fr 1fr; }
+.closing-slide .closing-head h2 { font-size: 66px; }
+.closing-head h2 .closing-salutation { display: block; white-space: nowrap; color: #eef7fc; }

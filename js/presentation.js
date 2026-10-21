@@ -1,4 +1,9 @@
 (() => {
+  // Normalize the legacy URL without a network redirect or another page load.
+  if (location.pathname.endsWith('/gioi_thieu_nang_luc_cong_nghe.html')) {
+    const cleanPath = location.pathname.slice(0, location.pathname.lastIndexOf('/') + 1);
+    history.replaceState(null, '', cleanPath + location.search + location.hash);
+  }
   const deck = document.getElementById("deck");
   const slides = [...document.querySelectorAll(".slide")];
   const total = slides.length;
