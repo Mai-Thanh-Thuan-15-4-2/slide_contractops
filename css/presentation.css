@@ -2340,3 +2340,19 @@ p {
 @media (prefers-reduced-motion: reduce), print {
   .agenda-slide.active .slide-head, .agenda-slide.active .agenda-part { animation: none; opacity: 1; transform: none; }
 }
+
+/* A spacious transition into the contract management project. */
+.part-two-content { display: grid; grid-template-columns: 1.4fr 1fr; align-items: center; gap: 40px; min-height: 560px; }
+.part-two-copy h2 { font-size: 70px; line-height: 1.12; letter-spacing: -.02em; margin: 24px 0; color: #eef7fc; }
+.part-two-copy h2 span { color: #78d9e9; }
+.part-two-sub { font-size: 25px; line-height: 1.5; color: #bad5e2; margin: 0; }
+.part-two-route { display: flex; align-items: center; gap: 18px; margin-top: 34px; font-size: 17px; color: #a7cedc; }
+.part-two-route i { width: 32px; height: 1px; background: #78d9e977; }
+.part-two-mark { position: relative; display: grid; place-items: center; height: 390px; }
+.part-two-mark > span { font-size: 300px; font-weight: 700; line-height: 1; color: #78d9e916; letter-spacing: -.06em; }
+.part-two-mark svg { position: absolute; width: 210px; height: 210px; fill: none; stroke: #85ddec; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transform: rotate(-7deg); filter: drop-shadow(0 0 20px #78d9e933); }
+.part-two-divider.active .part-two-copy { animation: goalReveal .8s ease-out both; }
+.part-two-divider.active .part-two-mark { animation: goalArtReveal .9s ease-out .2s both; }
+@media (prefers-reduced-motion: reduce), print {
+  .part-two-divider.active .part-two-copy, .part-two-divider.active .part-two-mark { animation: none; opacity: 1; transform: none; }
+}

@@ -142,7 +142,7 @@
     current = Math.max(0, Math.min(total - 1, n));
     slides.forEach((sl, i) => sl.classList.toggle("active", i === current));
     const sl = slides[current];
-    const contractStart = slides.findIndex((slide) => slide.matches(".pain-slide"));
+    const contractStart = slides.findIndex((slide) => slide.matches(".part-two-divider, .pain-slide"));
     const isContractPart = contractStart >= 0 && current >= contractStart;
     const isAgenda = sl.matches(".agenda-slide");
     document.getElementById("mastPart").textContent = isAgenda ? "TỔNG QUAN" : (isContractPart ? "PHẦN 2" : "PHẦN 1");
