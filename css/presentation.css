@@ -2303,3 +2303,10 @@ p {
 @media (prefers-reduced-motion: reduce), print {
   .active .slide-12-timeline-01::after { animation: none; transform: scaleX(1); }
 }
+
+/* Partner identity accompanies VTCODE on the opening slide. */
+#mast .brand { display: flex; align-items: center; gap: 16px; }
+#mast .cover-partner { display: none; align-items: center; gap: 16px; }
+#deck:has(.cover.active) #mast .cover-partner { display: flex; }
+#mast .cover-partner-divider { color: #a4c9d5; font-size: 22px; font-weight: 400; }
+#mast .cover-partner img { display: block; width: 105px; height: 48px; object-fit: contain; }
